@@ -26,7 +26,6 @@ class Album(models.Model):
 
 
 class Image(models.Model):
-    id = models.AutoField(primary_key=True)
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     url = models.CharField(max_length=64)
     status = models.BooleanField(default=True)

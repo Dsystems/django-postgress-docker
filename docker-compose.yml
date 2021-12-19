@@ -1,6 +1,6 @@
 version: '2'
 services:
-  db:
+  database:
     image: postgres
     volumes:
       - ./database/postgress:/var/lib/postgresql/data/
@@ -14,7 +14,7 @@ services:
       timeout: 5s
       retries: 5
       
-  web:
+  django:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
@@ -22,7 +22,7 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      db:
+      database:
           condition: service_healthy
     env_file:
       - ./.env.dev
