@@ -3,7 +3,7 @@ services:
   database:
     image: postgres
     volumes:
-      - ./database/postgress:/var/lib/postgresql/data/
+      - ./database/postgres:/var/lib/postgresql/data/
     env_file:
       - ./.env.dev
     ports:
