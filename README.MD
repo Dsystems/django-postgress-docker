@@ -18,6 +18,8 @@ source .venv/bin/activate.fish
 ```bash
 docker-compose up --build -d
 ```
+* -d (detached mode): Run containers in the background
+
 *Test: http://localhost:8000/* 
 
 > Example of manage.py command (creates django admin user):
