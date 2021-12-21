@@ -48,7 +48,7 @@ docker-compose -f docker-compose.prod.yml up --build
 
 --- 
 
-## File structure:
+## 📁 File structure:
 
 ```
 ├─ app/
