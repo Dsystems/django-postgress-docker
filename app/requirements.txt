@@ -1,0 +1,10 @@
+#prod
+gunicorn
+Django==4.0
+psycopg2-binary
+
+djangorestframework
+django-filter
+
+#dev:
+markdown
