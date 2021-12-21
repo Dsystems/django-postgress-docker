@@ -16,7 +16,7 @@ source .venv/bin/activate.fish
 > Build docker image from the project folder:
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 *Test: http://localhost:8000/* 
 
