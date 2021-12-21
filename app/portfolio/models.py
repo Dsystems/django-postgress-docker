@@ -29,7 +29,7 @@ class Image(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     url = models.CharField(max_length=64)
     status = models.BooleanField(default=True)
-    order = models.IntegerField(default=0) 
+    order = models.IntegerField(default=0)
 
     def __str__(self):
         return "Album #" + str(self.album.id) + " - image #" + str(self.id)
