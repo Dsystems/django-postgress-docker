@@ -18,7 +18,7 @@ source .venv/bin/activate.fish
 ```bash
 docker-compose up --build
 ```
-*Test: http://localhost:8000/*
+*Test: http://localhost:8000/* 
 
 > Example of manage.py command (creates django admin user):
 
