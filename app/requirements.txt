@@ -5,6 +5,7 @@ psycopg2-binary
 
 djangorestframework
 django-filter
+Pillow==8.4.0
 
 #dev:
 markdown
